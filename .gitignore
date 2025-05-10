@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django specific
+*.sqlite3
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+
+# Poetry
+.poetry/
+*.lock
+poetry.lock
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Virtual environments (si no usas venv aislado de poetry)
+.venv/
+env/

@@ -1,0 +1,22 @@
+[project]
+name = "blog-application"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "juliozapatao96",email = "julio.cesar.zaor@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "asgiref (==3.5.2)",
+    "django (>=4.1.0,<4.2.0)",
+    "sqlparse (==0.4.2)"
+]
+
+[tool.poetry]
+packages = [{include = "blog_application", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
