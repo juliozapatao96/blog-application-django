@@ -14,7 +14,10 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "blog_application", from = "src"}]
+packages = [
+  { include = "mysite", from = "src" },
+  { include = "blog", from = "src" }
+]
 
 
 [build-system]

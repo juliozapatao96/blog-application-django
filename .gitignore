@@ -17,8 +17,9 @@ staticfiles/
 
 # Poetry
 .poetry/
-*.lock
-poetry.lock
+
+#*.lock
+#poetry.lock
 
 # VSCode / IDEs
 .vscode/
