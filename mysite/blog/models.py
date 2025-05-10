@@ -44,7 +44,12 @@ class Post(models.Model):
     
     def get_absolute_url(self):
         # reverse: genera la URL de la vista 'post_detail'
-        # args: se pasan como una lista de argumentos a la URL (en este caso, el id del post)
-        return reverse('blog:post_detail', args=[self.id])
+        # args: se pasan como una lista de argumentos a la URL
+        return reverse('blog:post_detail', args=[
+            self.publish.year,
+            self.publish.month,
+            self.publish.day,
+            self.slug
+        ])
         
     
