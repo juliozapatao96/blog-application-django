@@ -11,6 +11,8 @@ urlpatterns = [
     #El segundo patrón se asigna a la vista post_detail y solo acepta un argumento, id, que coincide con un entero, definido por el convertidor de rutas int.
     path('<int:year>/<int:month>/<int:day>/<slug:post>/', 
          views.post_detail, 
-         name='post_detail'), 
+         name='post_detail'),
+    path('<int:post_id>/share/',
+         views.post_share, name='post_share'), 
     
 ]
